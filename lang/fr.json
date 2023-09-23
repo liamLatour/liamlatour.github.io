@@ -1,0 +1,94 @@
+{
+  "navbar":{
+    "sigle": "Fr",
+    "about": "A propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contact.",
+    "text": "Vous pouvez me contacter à travers l'une de ces platforms ou alors directement avec"
+  },
+  "workedwith": {
+    "title": "J'ai travaillé avec.",
+    "text": "Voici les entreprises avec qui j'ai déjà eu l'oportunité de travailler"
+  },
+  "welcome": {
+    "title": "Je suis Liam Latour",
+    "text": "Un étudiant aux Mines de Saint-Étienne que l'informatique passionne depuis de nombreuses années. J'ai toujours été fasciné par le monde de la programmation, et j'ai décidé d'en faire une part importante de ma vie, même en dehors de mes études d'ingénierie.\n\n Lors de mon temps libre, je me plonge dans des projets informatiques variés. J'aime explorer toutes les facettes de l'informatique, que ce soit la création de sites web, le développement d'applications, la résolution de problèmes complexes en programmation, ou même l'exploration des toutes dernières technologies émergentes. Ma curiosité insatiable me pousse à apprendre constamment et à relever des défis toujours plus passionnants.\n\n Ce qui me distingue, c'est ma polyvalence. Je suis un vrai touche-à-tout de l'informatique, prêt à m'attaquer à n'importe quel projet qui suscite mon intérêt. Ma capacité à apprendre rapidement et ma détermination sont mes atouts pour accomplir des réalisations ambitieuses."
+  },
+  "about":{
+    "title": "A propos.",
+    "items": {
+      "stage-beckers": {
+        "title": "Beckers internship",
+        "text": "Studied there",
+        "date": "2023"
+      },
+      "mines": {
+        "title": "Mines Saint-Étienne",
+        "text": "J'ai étudié là",
+        "date": "2021-2024"
+      },
+      "prepa": {
+        "title": "Classe préparatoire",
+        "text": "La formation en classe préparatoire MPSI au lycée Blaise Pascal de Clermont-Ferrand a été une expérience académique intensive.\n J'y ai acquis une solide base en mathématiques, physique, chimie, et informatique, avec un accent sur la résolution de problèmes complexes. Cette formation m'a préparé efficacement aux concours d'entrée des grandes écoles d'ingénieurs et a renforcé ma capacité à penser de manière analytique et à travailler sous pression.",
+        "date": "2019-2021"
+      },
+      "olympiade": {
+        "title": "Olympiades de sciences de l'ingénieur",
+        "text": "En 2019, j'ai participé avec deux camarades de classe aux Olympiades de Sciences de l'Ingénieur. Nous avons présenté un RADAR utilisant la lumière plutôt que des ondes radio (un LIDAR). L'objectif du robot utilisant ce LIDAR était de pouvoir se localiser tout en cartographiant un bâtiment (algorithme SLAM). Nous avons remporté la 5ème place et le Prix de la Démarche de l'Ingénieur grâce à ce projet.",
+        "date": "2019"
+      }
+    }
+  },
+  "projects":{
+    "title": "Mes Projets",
+    "items":{
+      "Scan-BDE-BP": {
+        "title": "Scan BDE Blaise Pascal",
+        "description": "Une application mobile pour composter des QR codes sur des billets et afficher les metadata liées au billet"
+      },
+      "C_Mandelbrot": {
+        "title": "Mandelbrot Set",
+        "description": "Génère une visualisation de l'ensemble de Mandelbrot en C"
+      },
+      "Cocon-Carma": {
+        "title": "Cocon Carma",
+        "description": "Une application mobile qui agit comme une caisse enregistreuse et peut exporter en fichier Excel"
+      },
+      "DaphnieMaton": {
+        "title": "Daphnie Maton",
+        "description": "Interface graphique en Python pour générer et uploader du code Arduino. A utiliser avec un robot 2 axes pouvant prendre des photos"
+      },
+      "DynamicQRCode": {
+        "title": "Dynamic QR Code",
+        "description": "Un site web très simple pour créer un QR code dynamic, protégé par un mot de passe"
+      },
+      "faircorp": {
+        "title": "Java API",
+        "description": "Projet 'Hello World' en Spring pour me familiariser avec la sécurité, le routing et le framework de manière générale"
+      },
+      "Hello-Whitespace": {
+        "title": "Hello Whitespace",
+        "description": "Programme 'Hello world' écrit avec le language esoteric WhiteSpace"
+      },
+      "LIDAR-SI": {
+        "title": "LIDAR",
+        "description": "Simulation de l'algorithme SLAM en Python et Matlab supposer être utilisé avec un lidar"
+      },
+      "MiTV": {
+        "title": "MiTV Drive",
+        "description": "System 'Drive' pour des photos et vidéos avec des capacité de reconnaissance facial, regroupement de photos similaire, transcoding des images et videos"
+      },
+      "Pro-Tech": {
+        "title": "Colony de fourmi pour exploration de graph",
+        "description": "Simulation d'une colony de fourmi avec phéromones pour résoudre le problème du Postier Chinois"
+      },
+      "PersonalPage": {
+        "title": "Personal Page",
+        "description": "Le code source de ce site même"
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "navbar":{
+    "sigle": "En",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contact.",
+    "text": "You can get in contact with me through one of the following platforms or directly at"
+  },
+  "workedwith": {
+    "title": "Worked with.",
+    "text": "These are the companies I already had the opportunity to work with"
+  },
+  "welcome": {
+    "title": "I'm Liam Latour",
+    "text": "A student at Mines Saint-Étienne, and passionate about computer science for many years. I've always been fascinated by the world of programming and decided to make it a significant part of my life, even beyond my engineering studies.\n\nDuring my free time, I immerse myself in various computer science projects. I enjoy exploring all aspects of computer science, whether it's creating websites, developing applications, solving complex programming problems, or even delving into the latest emerging technologies. My insatiable curiosity drives me to constantly learn and take on ever more exciting challenges.\n\nWhat sets me apart is my versatility. I'm a true jack-of-all-trades in computer science, ready to tackle any project that piques my interest. My ability to learn quickly and my determination are my strengths in achieving ambitious accomplishments."
+  },
+  "about":{
+    "title": "About Me.",
+    "items": {
+      "stage-beckers": {
+        "title": "Beckers internship",
+        "text": "Studied there",
+        "date": "2023"
+      },
+      "mines": {
+        "title": "Mines Saint-Étienne",
+        "text": "Studied there",
+        "date": "2021-2024"
+      },
+      "prepa": {
+        "title": "Preparatory class",
+        "text": "Studying in the MPSI preparatory class at Blaise Pascal High School in Clermont-Ferrand was an intense academic experience.\n I gained a strong foundation in mathematics, physics, chemistry, and computer science, with a focus on solving complex problems. This training effectively prepared me for entrance exams at top engineering schools and enhanced my ability to think analytically and work under pressure.",
+        "date": "2019-2021"
+      },
+      "olympiade": {
+        "title": "Engineering Science Olympiad",
+        "text": "In 2019, I participated with two classmates in the Engineering Sciences Olympiad. We presented a RADAR using light instead of radio waves (a LIDAR). The goal of the robot using this LIDAR was to self-locate while mapping a building (SLAM algorithm). We achieved 5th place and won the Engineer's Approach Prize thanks to this project.",
+        "date": "2019"
+      }
+    }
+  },
+  "projects":{
+    "title": "My Projects.",
+    "items":{
+      "Scan-BDE-BP": {
+        "title": "Scan BDE Blaise Pascal",
+        "description": "Mobile app to scan QR codes on tickets and show if it has already be scanned alongside metadata"
+      },
+      "C_Mandelbrot": {
+        "title": "Mandelbrot Set",
+        "description": "Generate a visualisation of the Mandelbrot set in C"
+      },
+      "Cocon-Carma": {
+        "title": "Cocon Carma",
+        "description": "Mobile app that emulates a cash register and can export an Excel file"
+      },
+      "DaphnieMaton": {
+        "title": "Daphnie Maton",
+        "description": "Python GUI application to generate and upload Arduino code. Meant to be used with a 2 axis robot that can take pictures"
+      },
+      "DynamicQRCode": {
+        "title": "Dynamic QR Code",
+        "description": "A very simple Python website to generate a dynamic QR code, protected by a password"
+      },
+      "faircorp": {
+        "title": "Java API",
+        "description": "'Hello World' Spring project to get familiar with security, routing and the framework as a whole"
+      },
+      "Hello-Whitespace": {
+        "title": "Hello Whitespace",
+        "description": "'Hello world' program written in the esoteric language WhiteSpace"
+      },
+      "LIDAR-SI": {
+        "title": "LIDAR",
+        "description": "Simulation of the SLAM algorithm in both Python and Matlab meant to be used with a lidar"
+      },
+      "MiTV": {
+        "title": "MiTV Drive",
+        "description": "Drive like system for images and videos with facial recognition, grouping similar pictures, image and video transcoding"
+      },
+      "Pro-Tech": {
+        "title": "Ants colony for graph exploration",
+        "description": "Ants colony simulation with pheromones to solve the Windy/Chinese Postman problem"
+      },
+      "PersonalPage": {
+        "title": "Personal Page",
+        "description": "The source code for this very site"
+      }
+    }
+  }
+}
