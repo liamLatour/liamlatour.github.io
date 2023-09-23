@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app:{
-    baseURL: '/PersonalPage',
+    baseURL: '/',
     head: {
-      link: [{ rel: 'icon', type: 'image/png', href: "/PersonalPage/favicon.ico" }]
+      link: [{ rel: 'icon', type: 'image/png', href: "/favicon.ico" }]
   },
   },
   modules: [
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
           }
         ],
         lazy: true,
-        baseUrl: 'https://liamlatour.github.io/PersonalPage/',
+        baseUrl: 'https://liamlatour.github.io/',
         defaultLocale: 'en',
         strategy: 'prefix_except_default',
         langDir: 'lang'
