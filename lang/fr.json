@@ -22,12 +22,12 @@
     "items": {
       "stage-beckers": {
         "title": "Beckers internship",
-        "text": "Studied there",
+        "text": "J'ai effectué un stage de trois mois au sein de Beckers Group à Berlin, au sein du pôle Global IT. Ma mission consistait à développer une application avec Power Apps et Power Automate pour remplacer les fichiers Excel de reporting, améliorant ainsi l'efficacité des processus de l'entreprise. Cette expérience m'a permis d'appliquer mes compétences en informatique de manière pratique et de contribuer à l'optimisation des opérations de Beckers Group.",
         "date": "2023"
       },
       "mines": {
         "title": "Mines Saint-Étienne",
-        "text": "J'ai étudié là",
+        "text": "J'étudie actuellement deux majeurs à l'École des Mines de Saint-Étienne : l'informatique et la science des données. Cette double formation me permet de combiner des compétences en programmation et en analyse de données pour résoudre des problèmes complexes dans un monde de plus en plus numérique. Mon objectif est de devenir un ingénieur polyvalent capable d'innover dans ces domaines en constante évolution.",
         "date": "2021-2024"
       },
       "prepa": {

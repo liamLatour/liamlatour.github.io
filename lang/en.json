@@ -22,12 +22,12 @@
     "items": {
       "stage-beckers": {
         "title": "Beckers internship",
-        "text": "Studied there",
+        "text": "I completed a three-month internship at Beckers Group in Berlin within the Global IT division. My task was to develop an application using Power Apps and Power Automate to replace Excel files for reporting, significantly enhancing the company's reporting efficiency. This experience allowed me to apply my computer skills practically and contribute to optimizing Beckers Group's operations.",
         "date": "2023"
       },
       "mines": {
         "title": "Mines Saint-Étienne",
-        "text": "Studied there",
+        "text": "I am currently pursuing two majors at the École des Mines de Saint-Étienne: computer science and data science. This dual program allows me to merge skills in programming and data analysis to address complex challenges in an increasingly digital world. My goal is to become a versatile engineer capable of innovating in these ever-evolving fields.",
         "date": "2021-2024"
       },
       "prepa": {
