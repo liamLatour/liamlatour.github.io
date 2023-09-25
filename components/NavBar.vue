@@ -1,29 +1,39 @@
 <template>
-<div class="w-full flex justify-between items-center">
-  <NuxtLink :to="localePath('index')" class="text-5xl" aria-label="Home">
-    <font-awesome-icon
+<div class="w-full flex justify-around items-center
+flex-col sm:flex-row">
+  <div class="w-full flex justify-between">
+    <NuxtLink :to="localePath('index')" class="sm:text-5xl text-3xl" aria-label="Home">
+      <font-awesome-icon
       class="transition-transform duration-300 hover:rotate-[30deg]"
       :icon="['fas', 'asterisk']"
     />
-  </NuxtLink>
-
-  <div class="flex gap-12 items-center">
-    <div class="flex gap-8">
-      <NavBarLink to="about" :text="$t('navbar.about')" title="About page"/>
-      <NavBarLink to="projects" :text="$t('navbar.projects')" title="Projects"/>
-      <NavBarLink to="contact" :text="$t('navbar.contact')" title="Contact"/>
-    </div>
-    <span>
-      <font-awesome-icon
-      @click="toggleDarkmode"
-      class="text-2xl cursor-pointer transition-colors duration-300 dark:hover:bg-white hover:bg-black rounded-full"
-      :icon="['fas', 'circle-half-stroke']"
-      />
-    </span>
-   
-    <NuxtLink class="w-6 cursor-pointer" :to="$t('navbar.sigle')=='En' ? switchLocalePath('fr') : switchLocalePath('en')" title="Change language">
-      {{ $t('navbar.sigle') }}
     </NuxtLink>
+    <span class="cursor-pointer text-3xl sm:hidden" @click="navbarVisible=!navbarVisible" >
+      <font-awesome-icon :icon="['fas', 'bars']" />
+    </span>
+  </div>
+
+  <div class="flex gap-12 items-center
+  flex-col sm:flex-row" v-if="navbarVisible">
+    <div class="flex gap-8 items-center
+    flex-col sm:flex-row">
+      <NavBarLink class="shrink-0" to="about" :text="$t('navbar.about')" title="About page"/>
+      <NavBarLink class="shrink-0" to="projects" :text="$t('navbar.projects')" title="Projects"/>
+      <NavBarLink class="shrink-0" to="contact" :text="$t('navbar.contact')" title="Contact"/>
+    </div>
+
+    <div class="flex gap-8">
+      <span>
+        <font-awesome-icon
+        @click="toggleDarkmode"
+        class="text-2xl cursor-pointer transition-colors duration-300 dark:hover:bg-white hover:bg-black rounded-full"
+        :icon="['fas', 'circle-half-stroke']"
+        />
+      </span>  
+      <NuxtLink class="w-6 cursor-pointer" :to="$t('navbar.sigle')=='En' ? switchLocalePath('fr') : switchLocalePath('en')" title="Change language">
+        {{ $t('navbar.sigle') }}
+      </NuxtLink>
+    </div>
   </div>
 </div>
 </template>
@@ -35,10 +45,22 @@ export default defineComponent({
   name: "NavBar",
   data() {
     return {
-      dark: false
+      dark: false,
+      navbarVisible: true
     }
   },
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener('resize', this.onResize);
+    })
+  },
+  beforeDestroy() { 
+    window.removeEventListener('resize', this.onResize); 
+  },
   methods: {
+    onResize() {
+      this.navbarVisible = window.innerWidth>=640;
+    },
     toggleDarkmode(){
       this.dark = !this.dark;
       if(this.dark){

@@ -2,7 +2,7 @@
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faAsterisk, faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons'
+import { faAsterisk, faCircleHalfStroke, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -11,7 +11,7 @@ config.autoAddCss = false
 
 // You can add your icons directly in this plugin. See other examples for how you
 // can add other styles or just individual icons.
-library.add(faAsterisk, faLinkedinIn, faGithub, faCircleHalfStroke)
+library.add(faAsterisk, faLinkedinIn, faGithub, faCircleHalfStroke, faBars)
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('font-awesome-icon', FontAwesomeIcon, {})

@@ -1,7 +1,5 @@
 <template>
-  <main class="m-auto mt-20 w-4/5">
-    <ContactInfo />
-  </main>
+  <ContactInfo />
 </template>
 
 <script setup lang="ts">

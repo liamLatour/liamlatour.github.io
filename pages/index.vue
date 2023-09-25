@@ -1,10 +1,11 @@
 <template>
-  <main class="mt-20 m-auto w-4/5">
-    <WelcomeHome />
-  </main>
+  <TitleItem :text="$t('welcome.title')"/>
+  <WelcomeHome />
 </template>
 
 <script setup lang="ts">
+import TitleItem from '~/components/widgets/TitleItem.vue';
+
 useHead({
   // Can be static or computed
   title: '',

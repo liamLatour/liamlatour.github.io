@@ -1,9 +1,7 @@
 <template>
   <div class="flex flex-col justify-around items-start gap-16 lg:flex-row">
     <div class="shrink grow basis-0">
-      <h1 class="text-5xl mb-10 font-semibold">
-        {{ $t('contact.title') }}
-      </h1>
+      <TitleItem :text="$t('contact.title')"/>
       <h3 class="">
         {{$t('contact.text')}} <a class="font-bold" href="mailto:liam.latour@gmail.com">liam.latour@gmail.com</a>
       </h3>
@@ -18,9 +16,7 @@
     </div>
 
     <div class="shrink grow basis-0 w-full">
-      <h1 class="text-5xl mb-10 font-semibold">
-        {{ $t('workedwith.title') }}
-      </h1>
+      <TitleItem :text="$t('workedwith.title')"/>
       <h3 class="">
         {{ $t('workedwith.text') }}
       </h3>
@@ -32,3 +28,7 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import TitleItem from '~/components/widgets/TitleItem.vue';
+</script>
