@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-7xl m-auto h-full sm:p-8 p-4 pt-2 pb-32">
     <NavBar/>
-    <main class="m-auto sm:mt-20 mt-6 sm:w-4/5 w-full">
+    <main class="m-auto sm:mt-20 mt-2 sm:w-4/5 w-full">
       <slot />
     </main>
   </div>

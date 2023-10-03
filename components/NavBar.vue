@@ -2,20 +2,20 @@
 <div class="w-full flex justify-around items-center
 flex-col sm:flex-row">
   <div class="w-full flex justify-between">
-    <NuxtLink :to="localePath('index')" class="sm:text-5xl text-3xl" aria-label="Home">
+    <NuxtLink :to="localePath('index')" class="sm:text-5xl sm:my-auto my-2 text-4xl" aria-label="Home">
       <font-awesome-icon
       class="transition-transform duration-300 hover:rotate-[30deg]"
       :icon="['fas', 'asterisk']"
     />
     </NuxtLink>
-    <span class="cursor-pointer text-3xl sm:hidden" @click="navbarVisible=!navbarVisible" >
+    <span class="cursor-pointer text-3xl my-2 sm:my-auto sm:hidden" @click="navbarVisible=!navbarVisible" >
       <font-awesome-icon :icon="['fas', 'bars']" />
     </span>
   </div>
 
-  <div class="flex gap-12 items-center
-  flex-col sm:flex-row" v-if="navbarVisible">
-    <div class="flex gap-8 items-center
+  <div class="flex gap-8 items-center mb-10 sm:m-auto
+  flex-col sm:flex-row" v-if="navbarVisible || bigScreen">
+    <div class="flex gap-6 items-center
     flex-col sm:flex-row">
       <NavBarLink class="shrink-0" to="about" :text="$t('navbar.about')" title="About page"/>
       <NavBarLink class="shrink-0" to="projects" :text="$t('navbar.projects')" title="Projects"/>
@@ -46,7 +46,8 @@ export default defineComponent({
   data() {
     return {
       dark: false,
-      navbarVisible: true
+      navbarVisible: false,
+      bigScreen: true
     }
   },
   mounted() {
@@ -59,7 +60,7 @@ export default defineComponent({
   },
   methods: {
     onResize() {
-      this.navbarVisible = window.innerWidth>=640;
+      this.bigScreen = window.innerWidth>=640;
     },
     toggleDarkmode(){
       this.dark = !this.dark;
