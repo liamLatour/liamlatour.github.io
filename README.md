@@ -1,6 +1,6 @@
 # My Personal Page
 
-![generate workflow](https://github.com/liamLatour/liamlatour.github.io/blob/main/.github/workflows/generate.yml/badge.svg)
+![generate workflow](https://github.com/liamLatour/liamlatour.github.io/actions/workflows/generate.yml/badge.svg)
 
 This is the source repository for my personal page. It is build with Vue JS + Nuxt + TypeScript + Tailwind and i18n for localisation.
 
