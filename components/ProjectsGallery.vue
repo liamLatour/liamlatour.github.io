@@ -81,7 +81,7 @@ export default defineComponent({
         },
         {
           id: "PersonalPage",
-          image: "https://github.com/liamLatour/liamlatour.github.io/main/screenshot.png",
+          image: "https://raw.githubusercontent.com/liamLatour/liamlatour.github.io/main/screenshot.png",
           url: "https://github.com/liamLatour/liamlatour.github.io/",
           technologies: ["Vue", "TypeScript"]
         }
